@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* _isupper - Write a function that checks for uppercase character, returns one if c if c is uppercase zero for otherwise
-* return: always 1 if capitol . p 
+* _isupper - Write a function that checks for uppercase character,
+* return: always 1 if capitol 
 */
 
 int _isupper(int c)
@@ -15,4 +15,3 @@ else
 {
 return (0);
 }
-{
