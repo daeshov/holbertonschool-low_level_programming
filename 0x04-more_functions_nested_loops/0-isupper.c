@@ -2,7 +2,8 @@
 
 /**
 * _isupper - Write a function that checks for uppercase character,
-* return: always 1 if capitol.
+* Return: always 1 if capitol
+* @c: this is a variable
 */
 int _isupper(int c)
 {
