@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * print_line - print the character "_" n times to draw a line
- * @n: number of characters to draw
+ * print_diagonal - line on terminal
+ * @n: is the number of times the character "/" should be printed
+ * diagonal should end with "/n"
  * only use _putchar function to print
+ * if "n" is 0 or less function should only print "/n"
  */
-
 void print_diagonal(int n)
 {
 	int draw;
