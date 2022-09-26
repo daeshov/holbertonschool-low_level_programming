@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
  * print_square - print a square of #'s given size
