@@ -4,7 +4,6 @@
  * print_numbers - print 0 to 9, followed by new line
  * use _putchar twice
  */
-
 void print_numbers(void)
 {
 char i;
