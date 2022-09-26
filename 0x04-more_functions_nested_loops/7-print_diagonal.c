@@ -6,7 +6,7 @@
  * only use _putchar function to print
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int times = n;
 
