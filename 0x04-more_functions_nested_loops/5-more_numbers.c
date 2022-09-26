@@ -1,5 +1,7 @@
 #include "main.h"
 #include "_putchar.c"
+//int _putchar(char c);
+
 /**
  * more_numbers - print 0 to 14 ten times
  */
