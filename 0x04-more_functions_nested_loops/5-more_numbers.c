@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
  * more_numbers - print 0 to 14 ten times
  */
