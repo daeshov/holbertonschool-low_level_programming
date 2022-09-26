@@ -1,6 +1,5 @@
 #include "main.h"
-#include "_putchar.c"
-
+#include <stdio.h>
 /**
  * main - print 1 to 100,
  * multiples of 3 with Fizz,
