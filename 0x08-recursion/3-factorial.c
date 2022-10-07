@@ -15,5 +15,5 @@ else if (n == 0 || n == 1)
 return (n);
 
 else
-return (factorial(n));
+return (factorial(n + 1));
 }
