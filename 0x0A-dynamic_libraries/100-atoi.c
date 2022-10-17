@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _atoi - convert a string representation of an integer to an integer
  *
