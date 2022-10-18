@@ -3,6 +3,4 @@
 
 #define ABS(x) (((x) < 0) ? (-x) : (x))
 
-typedef int asdf;
-
 #endif
