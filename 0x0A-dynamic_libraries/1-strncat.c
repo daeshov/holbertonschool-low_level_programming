@@ -8,22 +8,21 @@
  * Return: dest
  */
 
-char *_strncat(car *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int len;
-	int leng;
+	int i = 0;
+	int j = 0;
 
-	for (len = 0; dest[len] ; len++);
+	while (dest[i] != '\0') /*i is index of null terminator*/
+		i++;
 
-	for (leng = 0; src[leng]nm -D libdynamic.so; leng++)
+	while (src[j] != src[n]) /*append replacing null terminator*/
 	{
-		if (n > leng)
-		dest[len] = src[leng];
-		leng++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	if (n <= leng)
-	{
-		_putchar('\0')
-	}
+	dest[i] = '\0';
+
 	return (dest);
 }
