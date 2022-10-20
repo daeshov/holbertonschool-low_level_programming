@@ -16,9 +16,7 @@ struct dog
 	char *owner;
 };
 
-int main(void)
+
 {
-	typedef struct dog dog;
-	return (0);
+typedef struct dog dog;
 }
-#endif
