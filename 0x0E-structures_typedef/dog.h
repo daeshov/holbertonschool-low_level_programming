@@ -2,6 +2,7 @@
 #define DOG_H
 #include <stdio.h>
 #include "dog.h"
+int _putchar(char c);
 /**
  * struct dog - structure with elements
  *@name: first element
@@ -13,7 +14,7 @@
 struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
 
