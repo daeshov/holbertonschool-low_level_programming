@@ -18,7 +18,7 @@ struct dog
 
 int main(void)
 {
-	struct dog dog;
+	typedef struct dog dog;
 	return (0);
 }
 #endif
