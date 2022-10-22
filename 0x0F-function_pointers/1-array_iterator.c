@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "function_pointers.h"
 
 /**
@@ -11,11 +10,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	size_t n;
-
-	while (array != NULL && action != NULL)
-
-		for (n = 0; n < size; n++)
-
+	if (array && action)
+		while (size--)
 			action(*(array++));
 }
