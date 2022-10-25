@@ -4,7 +4,7 @@
 /**
  * print_all - function that prints anything followed by new line
  *@format: list of types of arguments passed
- *
+ *@fmt: list name
  *Return: void
  *
  *
@@ -14,8 +14,8 @@ void print_all(const char * const format, ...)
 {
 	va_list fmt;
 	int i, d;
-	char *q = "";	
-	argument datatype[] = { 
+	char *q = "";
+	argument datatype[] = {
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 }
 
 /**
- *
+ * print_char - print char
  *
  *
  *
@@ -56,31 +56,31 @@ void print_char(va_list fmt)
 
 
 /**
- *
+ * print_int - print int
  *
  *
  *
  */
 void print_int(va_list fmt)
 {
-        printf("%d", va_arg(fmt, int));
+	printf("%d", va_arg(fmt, int));
 }
 
 
 /**
- *
+ * print_float - print float
  *
  *
  *
  */
 void print_float(va_list fmt)
 {
-        printf("%f", va_arg(fmt, double));
+	printf("%f", va_arg(fmt, double));
 }
 
 
 /**
- *
+ * print_string - print string
  *
  *
  *
@@ -92,5 +92,5 @@ void print_string(va_list fmt)
 	str = va_arg(fmt, char *);
 	if (str == NULL)
 		str = "(nil)";
-        printf("%s", str);
+	printf("%s", str);
 }
