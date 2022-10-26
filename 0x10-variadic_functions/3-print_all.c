@@ -4,7 +4,7 @@
 /**
  * print_all - function that prints anything followed by new line
  *@format: list of types of arguments passed
- *@fmt: list name
+ *
  *Return: void
  *
  *
@@ -45,7 +45,7 @@ void print_all(const char * const format, ...)
 
 /**
  * print_char - print char
- *
+ *@fmt: list name
  *
  *
  */
@@ -57,7 +57,7 @@ void print_char(va_list fmt)
 
 /**
  * print_int - print int
- *
+ *@fmt: list name
  *
  *
  */
@@ -69,7 +69,7 @@ void print_int(va_list fmt)
 
 /**
  * print_float - print float
- *
+ *@fmt: list name
  *
  *
  */
@@ -81,7 +81,7 @@ void print_float(va_list fmt)
 
 /**
  * print_string - print string
- *
+ *@fmt: list name
  *
  *
  */
