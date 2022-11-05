@@ -1,4 +1,5 @@
 #include "main.h"
+#define  BIT_SIZE 8
 
 /**
  * powX - powers a number b to the p's power
