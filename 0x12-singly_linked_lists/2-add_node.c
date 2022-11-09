@@ -29,18 +29,18 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (!str)
 		return (NULL);
-	newNode = malloc(sizeof(list_t));
+	newNode = malloc(sizeof(list_t));/** new memory allocated to for mew str*/
 	if (!newNode)
 		return (NULL);
 	newStr = strdup(str);
 	if (!newStr)
-	{
+	{/** string will be copied */
 		free(newNode);
 		return (NULL);
 	}
 	newNode->len = _strlen(newStr);
-	newNode->str = newStr;
+	newNode->str = newStr;/** linked list to linke newnode to head of list*/
 	newNode->next = *head;
 	*head = newNode;
-	return (*head);
+	return (*head);/**then returns the address or null if else */
 }

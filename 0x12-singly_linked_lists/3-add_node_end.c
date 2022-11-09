@@ -32,20 +32,20 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (!str)
 		return (NULL);
 	newNode = malloc(sizeof(list_t));
-	if (!newNode)
+	if (!newNode)/** allocation of memory, to use newnode pointer to end list*/
 		return (NULL);
 	newStr = strdup(str);
 	if (!newStr)
-	{
+	{/** the newstr is same as copied str, null if not */
 		free(newNode);
 		return (NULL);
 	}
 	newNode->len = _strlen(newStr);
-	newNode->str = newStr;
+	newNode->str = newStr;/** linked list from length of newstr to node str*/
 	newNode->next = NULL;
 	if (!*head)
 	{
-		*head = newNode;
+		*head = newNode; /** as long as head is not null it will return*/
 		return (newNode);
 	}
 	while (last->next)
