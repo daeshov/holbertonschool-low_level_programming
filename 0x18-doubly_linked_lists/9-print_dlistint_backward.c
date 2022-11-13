@@ -21,5 +21,5 @@ size_t print_dlistint_backward(const dlistint_t *h)
 		printf("\n[h] <=>");
 	}
 
-	return (end->n);
+	return (h->n);
 }
