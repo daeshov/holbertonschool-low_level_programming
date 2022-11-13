@@ -9,13 +9,13 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *newNode = malloc(sizeof(listint_t));
-
+/** allocates space for new node*/
 	if (!head || !newNode)
 		return (NULL);
-	newNode->n = n;
+	newNode->n = n;/** will return null if fails*/
 	newNode->next = NULL;
 	if (*head)
 		newNode->next = *head;
-	*head = newNode;
+	*head = newNode;/** will return address if works*/
 	return (newNode);
 }

@@ -14,6 +14,6 @@ size_t print_listint(const listint_t *h)
 		printf("%i\n", h->n);
 		h = h->next;
 		count++;
-	}
-	return (count);
+	 /** will print a number on a new line then will run through elments*/
+	return (count);/**then return*/
 }

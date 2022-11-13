@@ -10,14 +10,14 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *newNode = malloc(sizeof(listint_t));
 	listint_t *current;
-
+/** allocates memory for end of list named current*/
 	if (!head || !newNode)
 		return (NULL);
-	newNode->n = n;
-	newNode->next = NULL;
+	newNode->n = n; /** if first or last of list is null will return*/
+	newNode->next = NULL; /** move through list till null*/
 	if (!*head)
 		*head = newNode;
-	else
+	else /** if last of list is not null it will return*/
 	{
 		current = *head;
 		while (current->next)

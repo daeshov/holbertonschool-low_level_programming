@@ -7,11 +7,11 @@
 void free_listint(listint_t *head)
 {
 	listint_t *tmp;
-
+/**tmp will free list*/
 	if (!head)
 		return;
 	while (head)
-	{
+	{/** tmp is copy of lis*/
 		tmp = head;
 		head = head->next;
 		free(tmp);
