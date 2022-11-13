@@ -17,8 +17,9 @@ size_t print_dlistint_backward(const dlistint_t *h)
 		n->next = h->prev;
 		n->prev = h->next;
 		end = n->next;
+
 		printf("\n[h] <=>");
 	}
 
-	return (h->n);
+	return (end->n);
 }
