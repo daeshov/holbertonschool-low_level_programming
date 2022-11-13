@@ -13,7 +13,7 @@ size_t print_dlistint_backward(const dlistint_t *h)
 
 	while (end != NULL)
 	{
-		end = n->prev;
+		end = h->prev;
 		n->next = h->prev;
 		n->prev = h->next;
 		end = n->next;
