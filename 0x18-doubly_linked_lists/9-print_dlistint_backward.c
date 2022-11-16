@@ -9,23 +9,18 @@
 
 size_t print_dlistint_backward(const dlistint_t *h)
 {
-	const dlistint_t *n = h;
 	size_t num = 0;
 
-	while (n->next != NULL)
-	{
-		n = n->next;
-	}
-	while (n->prev != NULL)
-	{
-		n = n->prev;
-		printf("%d\n", n->n);
-	}
+	if (!h)
+		return (0);
+	while (h->next)
+		h = h->next;
 
-	while (n)
+	while (h)
 	{
+		printf("%d\n", h->n);
+		h = h->prev;
 		num++;
 	}
-
 	return (num);
 }
