@@ -20,7 +20,7 @@ size_t print_dlistint_backward(const dlistint_t *h)
 	{
 		printf("%d\n", n->n);
 	}
-	
+
 	while (n)
 	{
 		num++;
