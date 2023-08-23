@@ -4,7 +4,7 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-    int low, high, mid; // Declare variables at the beginning
+    int low, high, mid;
 
     if (array == NULL)
         return -1;
@@ -17,7 +17,7 @@ int binary_search(int *array, size_t size, int value)
         mid = (low + high) / 2;
 
         printf("Searching in array: ");
-        size_t i; // Declare i outside the for loop
+        size_t i;
         for (i = (size_t)low; i <= (size_t)high; i++)
         {
             printf("%d", array[i]);
