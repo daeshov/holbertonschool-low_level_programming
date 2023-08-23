@@ -12,6 +12,7 @@
 
 int linear_search(int *array, size_t size, int value)
 {
+
 size_t i;
 
 if (array == NULL)
@@ -26,4 +27,3 @@ return ((int)i);
 
 return (-1); /* Value not found */
 }
-
