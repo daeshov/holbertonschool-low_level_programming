@@ -2,11 +2,12 @@
 #include <stddef.h>
 
 int binary_search(int *array, size_t size, int value) {
-    if (array == NULL)
-        return -1;
-
     int low = 0;
     int high = size - 1;
+    
+    if (array == NULL)
+
+        return -1;
 
     while (low <= high) {
         int mid = (low + high) / 2;
